@@ -5,7 +5,7 @@ class Demo {
      
     public Demo() {
         this.i = 11;
-        // this.j = 21; // final असल्यामुळे initialization constructor मध्ये करणे आवश्यक नाही
+        // this.j = 21; // final   initialization constructor  
     }
 }
 
@@ -15,7 +15,7 @@ class FinalData1 {
         System.out.println(dobj.i); // 11
         System.out.println(dobj.j); // 21
 
-        dobj.i++;   // चालेल
-        // dobj.j++; // ❌ error कारण final आहे
+        dobj.i++;   
+        // dobj.j++; //   error  
     }
 }
