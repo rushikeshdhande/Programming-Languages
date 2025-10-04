@@ -1,16 +1,27 @@
-final class Base {
-public void fun ()
+final class Base
 {
-    System.out.println("Inside Base Fun ");
-}
+    public void fun()
+    {
+        System.out.println("Inside Base fun");
+    }
+}`
+
+class Derived
+{
+    public Base bobj;       // Composition
+
+    public Derived()
+    {
+        bobj = new Base();
+    }
 }
 
-class Derived  {
-    public Base dobj;
-}
+class FinalClass2
+{
+    public static void main(String A[])
+    {
+        Derived dobj = new Derived();
 
-class FinalClass2 {
-    public static void main(String A[]) {
-
+        dobj.bobj.fun();
     }
 }

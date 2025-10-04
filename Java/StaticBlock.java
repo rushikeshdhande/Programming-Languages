@@ -1,34 +1,40 @@
-class Demo {
-    public int i; // instance variable
-    static public int j; // class Variable
+class Demo
+{
+    public int i;                   // Instance variable
+    static public int j;           // Class variable
 
-    static {
+    static
+    {
         j = 21;
     }
 
-    public Demo() {
+    public Demo()
+    {
         this.i = 11;
-
     }
 
-    public void fun() // Instance method
+    public void fun()               // Instance method
     {
-        System.out.println("Fun i :" + this.i);
-        System.out.println("Fun j :" + Demo.j);
+        System.out.println("fun i : "+this.i);
+        System.out.println("fun j : "+Demo.j);
     }
 
-    public static void gun() // Class method
+    public static void gun()        // Class method
     {
-        // System.out.println("Gun i :"+this.i); Not Allowed
-        System.out.println("Gun j :" + Demo.j);
+        // System.out.println("gun i : "+this.i);   Not allowed
+        System.out.println("gun j : "+Demo.j);
     }
 }
 
-class StaticBlock {
-    public static void main(String A[]) {
+class StaticBlock
+{
+    public static void main(String A[])
+    {
         Demo.gun();
         System.out.println(Demo.j);
+
         Demo dobj = new Demo();
+        
         System.out.println(dobj.i);
         dobj.fun();
     }

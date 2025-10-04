@@ -1,23 +1,23 @@
-abstract class Base {
-    public int i, j;
-
-    public int Addition(int a, int b) {
-        return a + b;
+abstract class Base
+{
+    public int i,j;
+    public int Addition(int a, int b)
+    {
+        return a+b;
     }
-
     abstract public int Substraction(int a, int b);
-
 }
 
-
-class Derived extends Base  // Error
+class Derived extends Base      // Error
 {
 
 }
-class AbstractDemo2 {
-    public static void main(String A[]) {
 
-        Base bp = new Base(); // Error Cannot instantiate the type Base banu nahi shakat
+class AbstractDemo2
+{
+    public static void main(String A[])
+    {
+        Base bp = new Base();   // Error
 
     }
 }

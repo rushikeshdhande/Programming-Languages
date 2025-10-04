@@ -1,20 +1,20 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 
 class Demo
 {
-public:
-    void Display()
-    {
-        cout << "Inside Display\n";
-    }
+    public:
+        void Display()
+        {
+            cout<<"Insiode Deisplay\n";
+        }
 };
 
 int main()
 {
-
     Demo dobj;
-    cout << sizeof(dobj);  // 1 byte
+
+    cout<<sizeof(dobj);     // 1 byte
 
     return 0;
 }

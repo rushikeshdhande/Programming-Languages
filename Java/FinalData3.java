@@ -1,21 +1,26 @@
-class Demo {
-    public int i = 21; 
+
+class Demo
+{
+    public int i = 11;
     final public int j = 21;
 
-     
-    public Demo() {
-        this.i = 11;
-        // this.j = 21; // final   initialization constructor  
+    public Demo()
+    {
+        this.i = 12;
+        this.j = 22;
     }
 }
 
-class FinalData1 {
-    public static void main(String A[]) {
+class FinalData3
+{
+    public static void main(String A[])
+    {
         Demo dobj = new Demo();
-        System.out.println(dobj.i); // 11
-        System.out.println(dobj.j); // 21
 
-        dobj.i++;   
-        // dobj.j++; //   error  
+        System.out.println(dobj.i);
+        System.out.println(dobj.j);
+        
+        dobj.i++;
+        // dobj.j++;   // Error
     }
 }
