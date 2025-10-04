@@ -16,8 +16,7 @@ int main()
     p->i = 11;
     p->f= 90.4f;
     p->j = 21;
-
-
+    
     printf("%lu\n",p->i);
     printf("%lu\n",p->f);
     printf("%lu\n",p->j);
