@@ -5,7 +5,6 @@ class Hello {
         System.out.println("Inside Hello constructor");
         this.i = no + 1;
     }
-
     public void Display() {
         System.out.println(" inside Hellow Display ");
     }
