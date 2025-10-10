@@ -1,91 +1,87 @@
 /*
-    Algorithm
-
+    Alogithm
     START
-          Accept first number as No1
-          Accept second number as No2
-          If the input is negative convert it into positive
-          perform Additon of No1 & No2
-          Display the Addition on screen
+        Accept First number as No1
+        Accept secnd number as No2
+        If the input is negative then convert it into positive
+        Perform Addition of No1 and No2
+        Display the Addition on Console
     STOP
 */
 
-////////////////////////////////////////////////////////
-///
-/// Required header files
-///
-////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+//
+//  Required Header files
+//
+//////////////////////////////////////////////////////////////
 
 #include<stdio.h>
 
-////////////////////////////////////////////////////////
-//  
-//  function name: AdditionTwoNumbers
-//  discription:   It is used to perform
-//  input:         Float , Float 
-//  output:        Float 
-//  auther:        Rushikesh Baban Dhande
-//  date:          09/10/2025 
+//////////////////////////////////////////////////////////////
 //
-////////////////////////////////////////////////////////
+//  Function Name   :   AdditionTwoNumbers
+//  Description     :   It is used to Perform Addition  
+//  Input           :   Float, Float             
+//  Output          :   Float
+//  Author          :   Rushikesh Baban Dhande 
+//  Date            :   09/10/2025 
+//
+//////////////////////////////////////////////////////////////
 
 float AdditionTwoNumbers(
-                          float fNo1,         //first input
-                          float fNo2         //2nd input
+                            float fNo1,                 // First Input
+                            float fNo2                  // Second Input
                         )
 {
-    float fsum = 0.0f;                        // to store the result
+    float fSum = 0.0f;                                  // To Store the result
 
-                                              // updator
-    if(fNo1 < 0.0f)
+    if(fNo1 < 0.0f)                                     // Updator
     {
-        fNo1 = fNo1;
-    }
-                                                        //updator
-    if(fNo2 < 0.0f)
-    {
-        fNo2 = fNo2;
+        fNo1 = -fNo1;
     }
 
-    fsum = fNo1 + fNo2;                                     // business logic
+    if(fNo2 < 0.0f)                                     // Updator
+    {
+        fNo2 = -fNo2;
+    }
+    
+    fSum = fNo1 + fNo2;                                 //Business logic
+    
+    return fSum;
+}   // End of AdditiontwoNumbers
 
-    return fsum;
-
-}   //end of AdditonTwo Numbers
-
-////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
 //
-// Entry point function for the application
+//  Entry Point Function for the Application
 //
-////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
 
 int main()
-{
-    float fValue1 = 0.0f, fValue2 = 0.0f;                   //to accept user input
-    float fRet = 0.0f;                                      // to store the result
+{  
+    float fValue1 = 0.0f, fValue2 = 0.0f;               // To Accept User input
+    float fRet = 0.0f;                                  // To Store the Result
 
-    printf("Enter first number : \n");
-    scanf("%f",&fValue1);
+    printf("Enter first number: \n");
+    scanf("%f", &fValue1);
 
-    printf("Enter second number : \n");
-    scanf("%f",&fValue2);
+    printf("Enter second number: \n");
+    scanf("%f", &fValue2);
+    
+    fRet = AdditionTwoNumbers(fValue1, fValue2);        // Method Call/ API Call/ Function Call
 
-    fRet = AdditionTwoNumbers(fValue1, fValue2);            // method / function call
-
-    printf("Addition is : %f\n",fRet);
-
+    printf("Addition of Two Numbers is : %f \n", fRet);
 
     return 0;
-}   // End of main
+}   // End of Main
 
-////////////////////////////////////////////////////////
-//
-//  testcases succefully handeled by the application
+//////////////////////////////////////////////////////////////
 //  
-//   Input : 10.5    Input : 3.2     Output : 13.7
-//   Input : -10.5   Input : 3.2     Output : 13.7
-//   Input : 10.5    Input : -3.2    Output : 13.7
-//   Input : -10.5   Input : -3.2    Output : 13.7
-//   Input : 10.5    Input : 0.0     Output : 10.5
+//  Test cases successfully handled by th application
 //
-////////////////////////////////////////////////////////
+//  Input1 : 10.5       Input2 : 3.2        Output : 13.7
+//  Input1 : -10.5      Input2 : 3.2        Output : 13.7
+//  Input1 : 10.5       Input2 : -3.2       Output : 13.7
+//  Input1 : -10.5      Input2 : -3.2       Output : 13.7
+//  Input1 : 10.5       Input2 : 0.0        Output : 10.5
+//
+//////////////////////////////////////////////////////////////
